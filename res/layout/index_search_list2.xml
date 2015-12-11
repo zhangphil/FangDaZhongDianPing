@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/android_smaller"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="图趣"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_new"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hui_discount_item_rule_arrow" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/normal_bg_color" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/android_smaller"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="社区论坛"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="某某护肤利器" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/new_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hui_discount_item_rule_arrow" />
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/normal_bg_color"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/android_smaller"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="排行榜"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="校园排行榜...某某驾到" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/new_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hui_discount_item_rule_arrow" />
+    </LinearLayout>
+    
+    <View
+        android:layout_marginLeft="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/normal_bg_color" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:gravity="center_vertical"
+        android:padding="@dimen/normal_space" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/android_smaller"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="霸王餐"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="私人定制深...免费体验" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/new_icon"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hui_discount_item_rule_arrow" />
+    </LinearLayout>
+
+</LinearLayout>

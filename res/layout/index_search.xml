@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/normal_bg_color" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/city_bottom_item_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="@dimen/normal_space"
+            android:textColor="#000"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/index_search_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/home_ico_city"
+            android:drawablePadding="@dimen/little_sapce"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="选择"
+            android:textColor="@color/normal_orange" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/index_search_address"
+            android:background="@drawable/main_search_search_shape"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/little_sapce"
+            android:paddingBottom="7dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="14dp"
+            android:paddingTop="7dp"
+            android:text="输入商户名、地点"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <com.jhd.fangdazhongdianping.myview.VerticalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            
+            <include layout="@layout/index_search_list1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <include layout="@layout/index_search_list2" />
+            <TextView
+                android:padding="@dimen/normal_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="趣味生活" />
+            <include layout="@layout/index_search_list3" />
+        </LinearLayout>
+    </com.jhd.fangdazhongdianping.myview.VerticalScrollView>
+
+</LinearLayout>

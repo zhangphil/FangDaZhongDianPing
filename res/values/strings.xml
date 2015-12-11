@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">仿大众点评</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_welcome_guide">WelcomeGuideActivity</string>
+    <string name="title_activity_city_list">CityListActivity</string>
+    <string name="title_activity_all_category">AllCategoryActivity</string>
+    <string name="title_activity_activity_home_list1">ActivityHomeList1</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_user_set">UserSetActivity</string>
+
+</resources>

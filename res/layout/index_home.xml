@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/home_top_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/home_ico_city"
+            android:drawablePadding="@dimen/little_sapce"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="选择"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:padding="11dp"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main_home_search_shape"
+            android:drawableLeft="@drawable/ic_home_search"
+            android:drawablePadding="@dimen/little_sapce"
+            android:paddingBottom="7dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="14dp"
+            android:paddingTop="7dp"
+            android:text="商户名，地点等...        "
+            android:textColor="@color/white" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/index_home_tips_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/home_title_tips_arrow"
+                android:visibility="gone" />
+
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/index_home_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/home_navibar_icon_add" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.jhd.fangdazhongdianping.myview.VerticalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include layout="@layout/index_home_list1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <include layout="@layout/index_home_list2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <include layout="@layout/index_home_list3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <include layout="@layout/index_home_list4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp" />
+
+                <include layout="@layout/index_home_list5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="精彩推荐"
+                    android:textSize="15sp" />
+
+                <include layout="@layout/index_home_list6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="猜你喜欢"
+                    android:textSize="15sp" />
+
+                <include layout="@layout/index_home_list7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11" />
+            </LinearLayout>
+        </com.jhd.fangdazhongdianping.myview.VerticalScrollView>
+        <!-- title shadow -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/title_shadow_shape" />
+
+        <LinearLayout
+            android:id="@+id/index_home_tips_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/home_navibar_tips_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/home_navibar_tips_icon_comment"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="写点评" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/home_navibar_tips_icon_store"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="添加商户" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/home_navibar_tips_icon_scan"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="扫一扫" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
